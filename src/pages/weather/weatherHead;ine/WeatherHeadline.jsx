@@ -39,8 +39,6 @@ export default function WeatherHeadline(){
 }
 
 
-console.log(getWeatherIcon(climate));
-
     return (
            
         <div>

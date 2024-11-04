@@ -53,8 +53,8 @@ const useWeather = () => {
         cloudPercentage: data?.clouds?.all,
         wind: data?.wind?.speed,
         time: data?.dt,
-        longitude: data?.longitude,
-        latitude: data?.latitude,
+        longitude: longitude,
+        latitude: latitude,
       };
 
       setWeatherData(updateWeatherData);

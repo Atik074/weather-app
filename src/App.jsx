@@ -1,12 +1,18 @@
 import Home from "./layout/Home";
-import { WeatherProvider } from "./provider";
+import { LocationProvider, WeatherProvider } from "./provider";
+import FavouriteProvider from "./provider/FavouriteProvider";
 
 export default function App() {
   
 
   return (
     <WeatherProvider>
-      <Home/>
+      <FavouriteProvider>
+        <LocationProvider>
+             <Home/>
+        </LocationProvider>
+    
+      </FavouriteProvider>
     </WeatherProvider>
   )
 }
